@@ -91,7 +91,7 @@ export default function HeroWithGrid() {
       >
         <div className="w-full lg:w-auto lg:flex-1 mb-8 lg:mb-0 lg:pr-8 flex justify-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-serif text-[rgb(29,32,24)] mb-6 leading-tight tracking-tight w-full text-center sm:text-left max-w-4xl">
-            Real estate's <span className="highlighted-text">most</span>
+            Real estate&apos;s <span className="highlighted-text">most</span>
             <br />
             <span className="highlighted-text">trusted</span> energy
             <br />

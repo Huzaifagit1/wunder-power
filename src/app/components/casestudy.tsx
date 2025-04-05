@@ -54,7 +54,7 @@ const EnergyCarousel = () => {
     }, 2000); 
     return () => clearInterval(interval);
   }, [currentSlide]);
-
+  
   useEffect(() => {
     lenisRef.current = new Lenis({ lerp: 0.1, smoothWheel: true });
     const raf = (time: number) => {
@@ -136,7 +136,7 @@ const EnergyCarousel = () => {
     <Image
       src={logos[currentSlide % logos.length]} // Dynamically choose logo based on slide index
       alt={`Logo ${currentSlide + 1}`}
-      width={80}
+      width={80}  
       height={30}
     />
   </div>

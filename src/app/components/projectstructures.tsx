@@ -33,7 +33,7 @@ const ProjectStructures = () => {
                 >
                   We employ a number of structures that are designed to help
                   our clients capitalize on energy opportunities. Based on your
-                  properties, capabilities, and goals, we'll help you evaluate
+                  properties, capabilities, and goals, we&apos;ll help you evaluate
                   whether project ownership makes sense for you, or whether a
                   no-cost solution is optimal. The right structure may vary from
                   property to property. We are committed to delivering the

@@ -53,7 +53,7 @@ your energy
   <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
     &#8594; {/* Right arrow symbol */}
   </span>
-    
+      
   {/* Button text */}
   <span className="relative z-10 group-hover:text-white transition-all duration-300 text-[12px]">
     Schedule a Consultation  

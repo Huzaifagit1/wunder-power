@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import gsap from 'gsap';
+
 import Lenis from '@studio-freight/lenis';
 import Image from 'next/image'; // Import Image component for the images in WhyWunder
 
@@ -28,9 +28,9 @@ export default function ConsultativeApproach() {
   <p className="text-sm font-semibold mb-3 text-[#3b403c]">HOW WE WORK</p>
   <h2 className="text-4xl  font-serif font-semibold mb-6">A consultative approach</h2>
   <p className="text-[14px]   leading-relaxed text-[#3b403c]">
-    Based on your assets, capabilities, and goals, we’ll help you tailor an energy
+    Based on your assets, capabilities, and goals, we&apos;ll help you tailor an energy
     strategy that maximizes value capture from your existing properties and
-    development pipeline. We’ll then work on your behalf to expedite timelines,
+    development pipeline. We&apos;ll then work on your behalf to expedite timelines,
     optimize outcomes, and manage logistics.
   </p>
 </div>
@@ -118,16 +118,16 @@ export default function ConsultativeApproach() {
       <div className="bg-[rgb(244,245,235)] py-16 px-8 md:px-16 lg:px-20 flex flex-col md:flex-row justify-between border-b border-gray-300 font-serif">
         {/* Left Section */}
         <div className="md:w-1/2 p-2 pb-8 md:pb-0 md:border-r border-gray-300 md:pr-8">
-  <p className="text-gray-500 uppercase font-semibold text-sm mb-2 text-[10px]">Wunder’s Industry-first</p>
+  <p className="text-gray-500 uppercase font-semibold text-sm mb-2 text-[10px]">Wunder&apos;s Industry-first</p>
   <h2 className="text-4xl font-bold mt-2 text-gray-900 mb-4">Upside guarantee</h2>
   <p className="text-[12px] leading-[23px] font-[Sohne, sans-serif]" style={{ color: 'rgb(79, 88, 79)' }}>
-    With Wunder, you can move forward with confidence knowing that you're the beneficiary of any project value. Even after contracts are signed, if we uncover opportunities to improve project economics further—expected or unexpected—we’ll amend the agreements so you benefit.
+    With Wunder, you can move forward with confidence knowing that you&apos;re the beneficiary of any project value. Even after contracts are signed, if we uncover opportunities to improve project economics further—expected or unexpected—we&apos;ll amend the agreements so you benefit.
     <br />  
     <span className="mt-6 block">
       While other solar providers may keep those benefits, we prioritize transparency and always put your interests first.
     </span>
   </p>
-</div>
+</div>  
 
 
         {/* Right Section */}
