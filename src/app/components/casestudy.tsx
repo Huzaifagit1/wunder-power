@@ -14,7 +14,7 @@ const EnergyCarousel = () => {
   const isAnimating = useRef(false);
   const statRef = useRef<HTMLDivElement>(null);
 
-  const slides = [
+  const slides = [  
     {
       title: "CA senior living leads with clean energy",
       description:
