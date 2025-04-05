@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -16,9 +16,16 @@ const mediaTabs = [
 gsap.registerPlugin(ScrollTrigger)
 
 export default function MediaScrollSections() {
+  const [isClient, setIsClient] = useState(false)  // State to check if we're on the client side
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
-  
+
   useEffect(() => {
+    setIsClient(true)  // Ensure this runs only on the client side after mounting
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return  // Skip animation logic if not on the client side
+
     // Loop over all sections and apply scroll triggers for each
     sectionsRef.current.forEach((section) => {
       if (!section) return
@@ -59,14 +66,14 @@ export default function MediaScrollSections() {
         }
       )
     })
-  }, [])
+  }, [isClient]) // Run this effect only when client-side is confirmed
 
   return (
     <section className="w-full px-4 py-16 max-w-6xl mx-auto space-y-24">
       {mediaTabs.map((item, index) => (
         <div
           key={item.id}
-          ref={el => (sectionsRef.current[index] = el)}
+          ref={el => { sectionsRef.current[index] = el }}
           className="flex flex-col md:flex-row gap-10 items-center opacity-0"
         >
           {/* Left side: Image or video with scroll-triggered animation */}
