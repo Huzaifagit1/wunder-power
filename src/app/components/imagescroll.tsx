@@ -17,10 +17,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function MediaScrollSections() {
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([])
-
+  
   useEffect(() => {
     // Loop over all sections and apply scroll triggers for each
-    sectionsRef.current.forEach((section, index) => {
+    sectionsRef.current.forEach((section) => {
       if (!section) return
 
       // Scroll animation for the left side (image or video)
