@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Sohne', sans-serif;
+  src: url('../../public/fonts/Sohne.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --background: white;
   --foreground: #ffffff;
-  font-family: serif !important;
+  font-family: 'Sohne', sans-serif !important;
 }
 
 @theme inline {
@@ -13,18 +20,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
     --foreground: #ededed;
-    font-family: serif !important;
+    font-family: 'Sohne', sans-serif !important;
   }
 }  
+
+@media screen and (max-width: 1030px) {
+  .lg\:hidden {
+    display: block !important;
+  }
+  .lg\:flex {
+    display: none !important;
+  }
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: serif;
-
+  font-family: 'Sohne', sans-serif;
 }
 

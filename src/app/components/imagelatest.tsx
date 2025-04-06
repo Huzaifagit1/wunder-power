@@ -81,17 +81,17 @@ const PressSection = () => {
             {/* Left Column */}
             <div className="lg:w-1/2 flex flex-col justify-between">
               <div className="p-10">
-                <h3 className="text-[10px] text-sm uppercase tracking-widest text-gray-500 mb-2">
+                <h3 className="text-[10px] text-sm font-semibold uppercase tracking-widest text-gray-500 mb-2">
                   The Latest
                 </h3>
-                <h2 className="text-3xl font-semibold text-gray-900 mb-4">Featured Press</h2>
-                <button className="group relative mt-6 flex items-center space-x-2 px-4 py-2 rounded-md font-semibold text-gray-900 overflow-hidden cursor-pointer">
+                <h2 className="text-3xl font-medium text-gray-900 mb-4">Featured Press</h2>
+                <button className="group relative mt-6 flex items-center space-x-2 px-4 py-2 rounded-md font-medium text-gray-900 overflow-hidden cursor-pointer">
                   {/* Background Fill Animation */}
                   <span className="absolute inset-0 bg-[#e3f88e] w-[40px] group-hover:w-full transition-all duration-500 ease-out z-0 rounded-md"></span>
 
                   {/* Content */}
                   <span className="relative z-10">→</span>
-                  <span className="relative z-10 ml-1">View All</span>
+                  <span className="relative z-10 ml-4">View All</span>
                 </button>
               </div>
             </div>
@@ -102,7 +102,7 @@ const PressSection = () => {
                 {pressItems.map((item, index) => (
                   <div
                     key={index}
-                    className="group flex items-center justify-between border-b border-[#e5e3df] pb-4 transition-colors duration-200 hover:bg-[#f8f8f8] px-2"
+                    className="cursor-pointer group flex items-center justify-between border-b border-[#e5e3df] pb-4 transition-colors duration-200 hover:bg-[#f8f8f8] px-2"
                   >
                     <div className="p-4">
                       <h3 className="text-lg font-medium mb-1 text-gray-900">{item.title}</h3>
