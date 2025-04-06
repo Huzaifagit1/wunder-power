@@ -1,4 +1,5 @@
 import React from "react";
+import "./viewpart.css"
 
 const VideoPart = () => {
   return (
@@ -24,10 +25,9 @@ const VideoPart = () => {
       {/* Text Content - centered overlay */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <div className="max-w mx-auto text-white">
-        <h2 className=" sm:text-[48px] md:text-[60px] lg:text-[72px] text-center font-serif font-semibold mb-4 sm:mb-2 leading-tight">
-  Unlock revenue and<br />
-  meet your ESG goals
-</h2>
+        <h2 className="sm:text-2xl lg:text-4xl text-center font-serif font-semibold mb-4 leading-tight w-[100%] lg:w-[70%] md:mx-auto main-heading">
+          Unlock revenue and meet your ESG goals
+        </h2>
 
 
           <button className="relative bg-[#e3f88e] text-black px-6 py-3  shadow-md hover:bg-black transition-all duration-420 cursor-pointer text-sm md:text-base font-medium overflow-hidden group">

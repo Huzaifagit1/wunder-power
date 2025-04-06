@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 
 import Lenis from '@studio-freight/lenis';
-import Image from 'next/image'; // Import Image component for the images in WhyWunder
+import Image from 'next/image';
+import "./howwework.css"
 
 export default function ConsultativeApproach() {
   const [isClient, setIsClient] = useState(false);  // To handle hydration issue
@@ -24,10 +25,10 @@ export default function ConsultativeApproach() {
     <div className="bg-[rgb(244,245,235)] text-[#111]">
       {/* Section: How We Work */}
       <div className="px-6 md:px-20 py-20 ">
-      <div className="max-w-6xl  mb-24 lg:w-1/2">
+      <div className="max-w-6xl p-8 mb-8 lg:w-1/2">
   <p className="text-sm font-semibold mb-3 text-[#3b403c]">HOW WE WORK</p>
-  <h2 className="text-4xl  font-serif font-semibold mb-6">A consultative approach</h2>
-  <p className="text-[14px]   leading-relaxed text-[#3b403c]">
+  <h2 className="text-4xl font-serif font-semibold mb-6 main-heading">A consultative approach</h2>
+  <p className="text-[14px] leading-relaxed text-[#3b403c]">
     Based on your assets, capabilities, and goals, we&apos;ll help you tailor an energy
     strategy that maximizes value capture from your existing properties and
     development pipeline. We&apos;ll then work on your behalf to expedite timelines,
@@ -60,10 +61,10 @@ export default function ConsultativeApproach() {
               text: 'Our deployment strategy will be designed around your needs and engineered to reliably deliver successful outcomes at any scale.',
             },
           ].map(({ number, title, text }, idx) => (
-            <div key={idx} className="p-8">
+            <div key={idx} className="p-8 ">
               <div className="text-3xl text-gray-400 font-serif mb-2">{number}</div>
               <h3 className="text-xl font-semibold mb-2">{title}</h3>
-              <p className="text-[#3b403c] leading-relaxed">{text}</p>
+              <p className="text-[#3b403c] max-md:text-sm leading-relaxed">{text}</p>
             </div>
           ))}
         </div>
@@ -85,13 +86,13 @@ export default function ConsultativeApproach() {
       <div className="w-full border-t border-gray-300 mb-24"></div>
 
       {/* RFP Section */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center p-4">
-        <div className="md:w-1/2">
+      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row gap-16 items-center">
+        <div className="md:w-1/2 w-[90%] p-4">
         <p className="text-sm sm:text-base md:text-2xl lg:text-4xl font-serif mb-6">
   Competitive RFPs to secure market pricing
 </p>
 
-          <p className="text-[#3b403c] text-[13px]  leading-relaxed">
+          <p className="text-[#3b403c] text-[13px] leading-relaxed">
             To ensure you capture the most value possible, we always run robust Request For
             Proposal (RFP) processes to secure multiple bids from pre-screened vendors,
             energy integrators, and hardware distributors. Where possible, we batch
@@ -99,7 +100,7 @@ export default function ConsultativeApproach() {
             enable RFP participants to bid more aggressively.
           </p>
         </div>
-        <div className="md:w-1/2 relative">
+        <div className="md:w-1/2 w-[90%] relative">
           <div className="bg-[#EEFFA4] p-8 rounded-md text-[#1c1c1c] shadow-md">
             <p className="uppercase text-sm font-semibold mb-2">Maximize your value</p>
             <div className="flex items-end space-x-4">
