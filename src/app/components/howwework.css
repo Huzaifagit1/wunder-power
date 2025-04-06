@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'NeuedeutscheNDGambit';
+  src: url('../../../public/fonts/neuedeutsche-nd-gambit-regular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-heading {
+      font-family: 'NeuedeutscheNDGambit', sans-serif;
+      font-weight: 400;
+}

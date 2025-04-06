@@ -24,9 +24,11 @@ const EnergyCarousel = () => {
 
   const slides = [  
     {
-      title: "CA senior living leads with clean energy",
+      title: "CA office campus saves with solar",
       description:
-        "Oppidan, Harrison Street, and Watermark Retirement Communities engaged Wunder to deploy an on-site solar system at Hacienda San Luis Rey, a new 212-unit luxury senior living community located in Oceanside, CA. The 419 kilowatt solar system delivers substantial energy bill savings, tangible progress against aggressive ESG goals, and clean energy for Hacienda San Luis Rey's new residents.",
+        "Jamestown, a global real estate investment and management firm with more than $11.7B in AUM, engaged Wunder to deploy a 350 kW solar energy system at The Exchange at Larkspur Landing, a 196,000 sf, 9.4-acre office campus north of San Francisco in Larkspur, California. ",
+      description2:
+        "The system came online in June 2024 and is expected to generate 570,320 kWh of power in its first year of operation, delivering energy cost savings while reducing the environmental impact of the property.",
       stats: ["$0", "420 kW", "659,720 kWh"],
       image: "/slide1.avif",
     },
@@ -228,15 +230,15 @@ const EnergyCarousel = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[2px] h-[2px] bg-[rgb(230,230,230)]" />
       </div>
   
-      <div className="max-w-screen-2xl mx-auto px-4 lg:px-12 space-y-8">
+      <div className="max-w-screen-2xl max-lg:w-[90%] mx-auto px-4 lg:px-12 space-y-8 ">
         {/* Top Row: Title and Logos */}
-        <div className=" flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0 ">
+        <div className=" flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0  ">
         <div >
 
     <p className="text-[12px] text-neutral-500 uppercase tracking-widest font-bold mb-2">
       Case Study  
     </p>
-    <h2 className="text-[20px] md:text-[18px] lg:text-[48px] leading-tight font-serif text-neutral-900 max-w-xl carousel-text">
+    <h2 className="text-lg md:text-xl xl:text-4xl leading-tight font-serif text-neutral-900 max-w-xl carousel-text">
       {slides[currentSlide].title}
     </h2>
   </div>
@@ -248,7 +250,7 @@ const EnergyCarousel = () => {
   className="carousel-logo"
   src={logos[currentSlide % logos.length]}
   alt={`Logo ${currentSlide + 1}`}
-  width={80}
+  width={80}  
   height={30}  
 />
 
@@ -270,7 +272,8 @@ const EnergyCarousel = () => {
 
           {/* Description */}
           <div className="lg:col-span-4 space-y-4">
-            <p className="text-neutral-700 text-sm slide-description">{slides[currentSlide].description}</p>
+            <p className="text-neutral-700 text-xs slide-description">{slides[currentSlide].description}</p>
+            <p className="text-neutral-700 text-xs slide-description">{slides[currentSlide].description2}</p>
             <button className="group relative mt-6 flex items-center space-x-2 px-4 py-2 rounded-md font-semibold text-gray-900 overflow-hidden cursor-pointer">
               {/* Background Fill Animation */}
               <span className="absolute inset-0 bg-[#e3f88e] w-[40px] group-hover:w-full transition-all duration-500 ease-out z-0 rounded-md"></span>

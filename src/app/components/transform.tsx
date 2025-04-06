@@ -28,11 +28,11 @@ export default function HeroWithGrid() {
         className="relative z-10 h-full flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 lg:p-20 w-full space-y-8 "
       >
         <div className="w-full lg:w-auto flex-1 mb-8 lg:mb-0 lg:pr-8">
-          <h1 className="text-7xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-[67px] font-serif text-[rgb(29,32,24)] mb-6 leading-tight tracking-tight w-full text-center  " >
+          <h1 className="text-3xl lg:text-7xl xl:text-[67px] font-serif text-[rgb(29,32,24)] mb-6 leading-tight tracking-tight w-full text-center  " >
             Ready to  <span className="highlighted-text mr-3">transform </span>
-            your energy
-            <br />  
-            strategy           
+            your energy 
+            <br className='max-lg:hidden' />  
+            <span> strategy</span>       
           </h1>  
         </div>
 

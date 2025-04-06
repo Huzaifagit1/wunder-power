@@ -10,7 +10,7 @@ const ProjectStructures = () => {
       {/* Section 1 */}
       <div className="w-full px-5 sm:px-3 py-12 sm:py-16 border-b border-[rgb(230,230,230)] relative z-20">
         <div className="max-w-full mx-auto py-10 lg:p-10">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-lg:w-[90%] max-lg:mx-auto">
             {/* Left content */}
             <div className="lg:w-1/2">
               <h2 className="text-[12px] font-bold text-[rgb(79,88,79)] mb-4">
@@ -55,7 +55,7 @@ const ProjectStructures = () => {
                 alt="Solar energy project"
                 width={500}
                 height={300}
-                className="object-cover"
+                className="object-cover w-[100%]"
                 priority
               />
             </div>
@@ -66,7 +66,7 @@ const ProjectStructures = () => {
       {/* Section 2 */}
       <div className="w-full px-5 sm:px-3 pt-4 pb-12 sm:pb-16 relative z-20">
         <div className="max-w-full mx-auto py-10 lg:p-10">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-lg:w-[90%] max-lg:mx-auto">
             {/* Left image */}
             <div className="lg:w-1/2 relative order-last lg:order-first">
               <Image
@@ -74,7 +74,7 @@ const ProjectStructures = () => {
                 alt="Projects"
                 width={500}
                 height={300}
-                className="object-cover"
+                className="object-cover w-[100%]"
                 priority
               />
             </div>
