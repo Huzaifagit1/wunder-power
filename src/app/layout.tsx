@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// Importing the Geist and Geist_Mono fonts using next/font
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,6 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Adding Google Fonts link in the head */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Geist:wght@400;700&family=Geist+Mono:wght@400;700&display=swap"
+          rel="stylesheet"
+        />  
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

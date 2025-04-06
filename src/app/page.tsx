@@ -10,15 +10,15 @@ import ProjectStructures from "./components/projectstructures";
 
 import EnergyCarousel from "./components/casestudy";
 import ImageSlid from "./components/imagelatest";
-import Transform from "./components/transform";
+import Transform from "./components/transform";    
+// import MediaSlider from "./components/new";
 
 export default function Home() {
   return (
-    <div >  
-      
+    <div>
       
           
-      <div className="h-15 text-center text-gray-600 sticky">header <br /> Hero Section Below</div>
+      <div className="h-15 text-center text-gray-600 w-[100%] bg-white fixed top-0 z-[1000]">header <br /> Hero Section Below</div>
 
       
       {/* <Hero/> */}
@@ -26,6 +26,7 @@ export default function Home() {
       <BlackstoneWunder/>
       <WhyWunder/>
       <RunningSlider/>
+      {/* <MediaSlider/> */}
       <ConsultativeApproach/>
       <VideoPart/>
       <ProjectStructures/>

@@ -7,16 +7,16 @@ const WhyWunder = () => {
       {/* Left Section */}
       <div className="md:w-1/2 pb-8 md:pb-0 md:border-r border-gray-300 md:pr-8">
         <h6 className="text-gray-500 uppercase font-semibold text-sm">Why Wunder</h6>
-        <h2 className="text-5xl md:text-4xl sm:text-3xl font-bold mt-2 text-gray-900 w-full">
-  Get more value out of your properties with Wunder
-</h2>
+        <h2 className="text-xl md:text-3xl lg:text-4xl leading-snug mt-2 text-gray-900 md:w-[80%]">
+          Get more value out of your properties with Wunder
+        </h2>
   
       </div>
 
       {/* Right Section */}
-      <div className="md:w-1/2 space-y-6 mt-8 md:mt-0 flex flex-col md:pl-8">
+      <div className="md:w-1/2 space-y-6 mt-5 md:mt-0 flex flex-col md:pl-8">
         {/* Item 1 */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center pt-4 max-md:border-t max-md:border-gray-300">
           <div className="">
             <div className="flex justify-between w-full">
               <h4 className="text-lg text-black">Trusted experts</h4>
